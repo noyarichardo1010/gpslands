@@ -2,16 +2,6 @@
 get_header();
 
 $brand = get_queried_object();
-
-$custom_order = [
-    'trimble-geospatial',
-    'dji-enterprise',
-    'sensys-products',
-    'beta'
-  ];
-  
-  $is_other_products = ($brand->slug === 'others');
-
 ?>
 
 <!-- LIST PRODUK -->
@@ -24,15 +14,7 @@ $custom_order = [
             <!-- BRAND TITLE -->
             <div class="brand-title-wrap">
                 <h1 class="brand-title text-uppercase">
-                    <h1 class="brand-title text-uppercase">
-                    <?php
-                    if ($brand->slug === 'others') {
-                        echo 'Produk Lainnya';
-                    } else {
-                        echo esc_html($brand->name);
-                    }
-                    ?>
-                    </h1>
+                    <?php echo esc_html($brand->name); ?>
                 </h1>
             </div>
         </div>
@@ -104,49 +86,18 @@ $custom_order = [
         <?php
         $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 
-        // $products = new WP_Query([
-        // 'post_type'      => 'our-products',
-        // 'posts_per_page' => 12,
-        // 'paged'          => $paged,
-        // 'tax_query'      => [
-        //     [
-        //     'taxonomy' => 'brand-products',
-        //     'field'    => 'term_id',
-        //     'terms'    => $brand->term_id,
-        //     ]
-        // ]
-        // ]);
-
-        $args = [
-            'post_type'      => 'our-products',
-            'posts_per_page' => 12,
-            'paged'          => $paged,
-            ];
-            
-            if ($is_other_products) {
-            
-            $args['tax_query'] = [
-                [
-                'taxonomy' => 'brand-products',
-                'field'    => 'slug',
-                'terms'    => $custom_order,
-                'operator' => 'NOT IN'
-                ]
-            ];
-            
-            } else {
-            
-            $args['tax_query'] = [
-                [
-                'taxonomy' => 'brand-products',
-                'field'    => 'term_id',
-                'terms'    => $brand->term_id,
-                ]
-            ];
-            
-        }
-            
-        $products = new WP_Query($args);
+        $products = new WP_Query([
+        'post_type'      => 'our-products',
+        'posts_per_page' => 12,
+        'paged'          => $paged,
+        'tax_query'      => [
+            [
+            'taxonomy' => 'brand-products',
+            'field'    => 'term_id',
+            'terms'    => $brand->term_id,
+            ]
+        ]
+        ]);
 
         if ($products->have_posts()) :
         while ($products->have_posts()) : $products->the_post();
@@ -178,15 +129,7 @@ $custom_order = [
             <div class="product-content">
 
                 <div class="product-meta">
-                <!-- <span class="brand_product"><?php echo esc_html($brand->name); ?></span> -->
-
-                <?php
-                $brands = get_the_terms(get_the_ID(), 'brand-products');
-                ?>
-
-                <span class="brand_product">
-                <?php echo $brands ? esc_html($brands[0]->name) : ''; ?>
-                </span>
+                <span class="brand_product"><?php echo esc_html($brand->name); ?></span>
 
                 <?php if ($categories): ?>
                     <span class="cat_products"> • <?php echo esc_html($categories[0]->name); ?></span>
