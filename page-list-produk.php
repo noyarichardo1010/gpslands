@@ -149,99 +149,84 @@ while (have_posts()) : the_post();
       if (!empty($other_brands)) :
     ?>
 
+    <div class="brand-section">
 
-      <div class="brand-section">
+      <div class="brand-header">
+        <h2 class="section-title">Produk Lainnya</h2>
+      </div>
 
-        <div class="brand-header">
-          <h2 class="section-title">Produk Lainnya</h2>
+      <div class="row">
 
-          <a class="brand-link" href="<?php echo esc_url(home_url('/brand-products/others')); ?>">
-            Semua Produk <i class="fas fa-long-arrow-alt-right"></i>
-          </a>
-        </div>
+        <?php
+        foreach ($other_brands as $brand) :
 
-        <div class="row">
-
-          <?php
           $products = new WP_Query([
             'post_type'      => 'our-products',
             'posts_per_page' => 4,
             'tax_query'      => [
               [
                 'taxonomy' => 'brand-products',
-                'field'    => 'slug',
-                'terms'    => $custom_order,
-                'operator' => 'NOT IN'
+                'field'    => 'term_id',
+                'terms'    => $brand->term_id,
               ]
-            ],
-            'orderby' => 'date',
-            'order'   => 'DESC'
+            ]
           ]);
 
           if ($products->have_posts()) :
             while ($products->have_posts()) : $products->the_post();
 
-              $brands = get_the_terms(get_the_ID(), 'brand-products');
               $categories = get_the_terms(get_the_ID(), 'product-category');
-
               $content = wp_strip_all_tags(get_the_content());
               $short_desc = strtok($content, '.');
-          ?>
+        ?>
 
-          <div class="col-12 col-md-3">
-            <div class="product-card">
+        <div class="col-12 col-md-3">
+          <div class="product-card">
 
-              <div class="product-image">
-                <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('medium'); ?>
-                </a>
+            <div class="product-image">
+              <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail('medium'); ?>
+              </a>
+            </div>
+
+            <div class="product-content">
+
+              <div class="product-meta">
+                <span class="brand_product"><?php echo esc_html($brand->name); ?></span>
+                <?php if ($categories): ?>
+                  <span class="cat_products"> • <?php echo esc_html($categories[0]->name); ?></span>
+                <?php endif; ?>
               </div>
 
-              <div class="product-content">
+              <h3 class="product-title"><?php the_title(); ?></h3>
 
-                <div class="product-meta">
-                  <?php if ($brands): ?>
-                    <span class="brand_product"><?php echo esc_html($brands[0]->name); ?></span>
-                  <?php endif; ?>
+              <p class="product-desc">
+                <?php echo esc_html($short_desc); ?>...
+              </p>
 
-                  <?php if ($categories): ?>
-                    <span class="cat_products"> • <?php echo esc_html($categories[0]->name); ?></span>
-                  <?php endif; ?>
-                </div>
+              <a class="product-link" href="<?php the_permalink(); ?>">
+                Selengkapnya <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
 
-                <h3 class="product-title"><?php the_title(); ?></h3>
-
-                <p class="product-desc">
-                  <?php echo esc_html($short_desc); ?>...
-                </p>
-
-                <a class="product-link" href="<?php the_permalink(); ?>">
-                  Selengkapnya <i class="fas fa-long-arrow-alt-right"></i>
-                </a>
-
-              </div>
             </div>
           </div>
+        </div>
 
-          <?php
+        <?php
             endwhile;
             wp_reset_postdata();
           endif;
-          ?>
 
-        </div>
+        endforeach;
+        ?>
+
       </div>
-
-
+    </div>
 
     <?php
       endif;
     endif;
     ?>
-
-
-
-
 
   </div>
 </section>
