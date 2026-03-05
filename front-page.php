@@ -1,0 +1,10 @@
+<?php
+get_header();
+get_template_part('template/homepage/section1');
+get_template_part('template/homepage/services_card');
+get_template_part('template/homepage/products-slide');
+get_template_part('template/homepage/clients');
+get_template_part('template/homepage/news');
+get_template_part('template/homepage/contact');
+get_footer();
+?>

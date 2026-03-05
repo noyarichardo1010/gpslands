@@ -1,0 +1,11 @@
+<?php
+get_header();
+get_template_part('template/solutions/index');
+get_template_part('template/solutions/section-1');
+get_template_part('template/solutions/section-2');
+get_template_part('template/solutions/section-3');
+get_template_part('template/solutions/section-4');
+get_template_part('template/solutions/section-5');
+get_template_part('template/section-call-us');
+get_footer();
+?>

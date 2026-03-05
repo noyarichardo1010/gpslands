@@ -1,0 +1,10 @@
+<?php
+get_header();
+get_template_part('template/profil-perusahaan/index');
+get_template_part('template/profil-perusahaan/section-1');
+get_template_part('template/profil-perusahaan/visi-misi');
+get_template_part('template/profil-perusahaan/our-team');
+get_template_part('template/profil-perusahaan/sertifikasi');
+get_template_part('template/profil-perusahaan/history');
+get_footer();
+?>

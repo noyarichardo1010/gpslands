@@ -1,0 +1,10 @@
+<?php
+get_header();
+get_template_part('template/laboratorium-kalibrasi/index');
+get_template_part('template/laboratorium-kalibrasi/section-1');
+get_template_part('template/laboratorium-kalibrasi/section-2');
+get_template_part('template/laboratorium-kalibrasi/section-3');
+get_template_part('template/laboratorium-kalibrasi/section-4');
+get_template_part('template/contact-us');
+get_footer();
+?>

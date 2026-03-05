@@ -1,0 +1,80 @@
+
+.gps-card {
+    transition: all 0.35s ease;
+    transform: scale(1);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.gps-card:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Optional: icon ikut animasi halus */
+.gps-card-icon img {
+    transition: transform 0.35s ease;
+}
+
+.gps-card:hover .gps-card-icon img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Link animasi */
+.gps-link {
+    transition: all 0.3s ease;
+}
+
+.gps-card:hover .gps-link {
+    letter-spacing: 0.5px;
+}
+
+
+.swiper-slide .slide-inner {
+    overflow: hidden;
+}
+
+/* Smooth transition */
+.swiper-slide img {
+    transition: transform 0.4s ease;
+}
+
+/* Hover zoom */
+.swiper-slide:hover img {
+    transform: scale(1.1);
+}
+
+// fadein
+.fadein {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When visible */
+.fadein.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-image {
+    overflow: hidden;
+}
+
+/* Smooth transition untuk card */
+.product-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Smooth transition untuk image */
+.product-image img {
+    transition: transform 0.4s ease;
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: scale(1.04);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.12);
+}

@@ -1,0 +1,10 @@
+<?php
+get_header();
+get_template_part('template/why-us/index');
+get_template_part('template/why-us/section-1');
+get_template_part('template/why-us/section-2');
+get_template_part('template/why-us/testimoni');
+get_template_part('template/why-us/client');
+get_template_part('template/why-us/contact');
+get_footer();
+?>

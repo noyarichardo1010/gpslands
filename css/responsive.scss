@@ -1,0 +1,796 @@
+@media (max-width: 768px) {
+
+    html, body {
+      overflow-x: hidden;
+    }
+  
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    h2.wp-block-heading,
+    h2,
+    .section-title {
+      font-size: 22px !important;
+    }
+  
+    p {
+      font-size: 14px !important;
+    }
+  
+  
+    .gps-logo {
+      width: 130px;
+    }
+  
+    .gps-lang {
+        margin-top: 10px;
+        border-top: 1px solid #1e1e1e;
+        border-radius: 0;
+        padding: 5px 10px;
+        .lang-btn.active{
+            background-color: #e4bb04;
+        }
+    }
+    .insight-section{
+        padding: 60px 0px;
+    }
+    .insight-footer {
+        margin-top: 16px;
+    }
+    
+    .insight-content{
+        padding: 16px 20px;
+    }
+    .insight-content h3{
+        a{
+            font-size: 16px;
+        }
+    }
+    .insight-section .insight-container .insight-grid .insight-card .insight-content h3 a, .wrap_list_news .insight-container .insight-grid .insight-card .insight-content h3 a{
+        font-size: 16px;
+    }
+    /* ================= HERO ================= */
+  
+    .gps-hero {
+        min-height: auto;
+        padding: 90px 0 20px;
+        text-align: center;
+    }
+  
+    .gps-hero-title {
+      font-size: 30px;
+    }
+  
+    .gps-hero-desc {
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  
+    .gps-hero-actions .btn {
+      margin: 6px 4px;
+    }
+  
+    /* ================= SERVICES ================= */
+  
+    .gps-services {
+      margin-top: 0;
+    }
+  
+    .gps-card {
+      height: auto;
+      margin-bottom: 16px;
+      margin-top: 16px;
+      .gps-link{
+        position: relative;
+        bottom: unset;
+      }
+    }
+    .row.g-4 {
+        --bs-gutter-y: 0;
+    }
+  
+    /* ================= PRODUCT SLIDER ================= */
+  
+    .product-swiper .swiper-slide {
+    //   width: 240px !important;
+    }
+  
+    .product-card img {
+      height: 260px;
+    }
+  
+    /* ================= TRUSTED CLIENT ================= */
+  
+    .trusted-desc {
+      padding: 0 10px;
+    }
+  
+    /* ================= INSIGHT ================= */
+  
+    .insight-desc {
+      padding: 0 10px;
+    }
+  
+    .insight-grid {
+      grid-template-columns: 1fr !important;
+    }
+  
+    .insight-card {
+      margin-bottom: 20px;
+    }
+  
+    /* ================= CONSULT ================= */
+  
+    .consult-section {
+      padding: 60px 0px;
+    }
+  
+    .consult-card {
+      padding: 30px 20px;
+    }
+  
+    /* ================= FOOTER ================= */
+  
+    .footer-container {
+      grid-template-columns: 1fr !important;
+      gap: 30px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    /* ================= PRODUCT LIST ================= */
+  
+    .product-grid {
+      grid-template-columns: 1fr !important;
+      gap: 20px;
+    }
+  
+    .product-card {
+      height: auto !important;
+    }
+  
+    .product-image img {
+        height: 130px;
+    }
+  
+    /* ================= PRODUCT DETAIL ================= */
+  
+    .wrap_detail_products {
+      padding-top: 6rem !important;
+    }
+  
+    .product-main-slider .swiper-slide {
+      height: 260px !important;
+    }
+  
+    .spec-row {
+      flex-direction: column;
+    }
+  
+    .spec-label,
+    .spec-value {
+      flex: 100%;
+    }
+  
+    /* ================= HISTORY ================= */
+  
+    .history_card {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .history_image,
+    .history_content {
+      width: 100%;
+    }
+  
+    .history_image img {
+      height: 200px;
+    }
+  
+    /* ================= TEAM ================= */
+  
+    .wrap_our_team {
+      transform: none !important;
+      margin-bottom: 0 !important;
+      padding-top: 40px;
+    }
+  
+    .team_card {
+      height: 300px;
+    }
+  
+    /* ================= VISI MISI ================= */
+  
+    .wrap_visi_misi {
+      height: auto;
+      padding-top:40px;
+      padding-bottom: 40px;
+    }
+  
+    .wrap_visi_misi .wp-block-columns {
+      transform: none;
+    }  
+    .wrap_visi_misi::before{
+        height: 100%;
+    }
+    .wrap_visi_misi .wrap_all_visimisi{
+        width: 100%;
+    }
+    .wrap_visi_misi .visi-perusahaan{
+        height: auto;
+    }
+    .wrap_visi_misi .misi-perusahaan ul.wp-block-list li{
+        font-size: 14px;
+    }
+
+  
+    .visi-perusahaan,
+    .misi-perusahaan {
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    /* ================= SOLUSI ================= */
+  
+    .daftar-solusi .swiper-slide img {
+      height: 300px;
+    }
+  
+    /* ================= LAB VIDEO ================= */
+  
+    .wrap_lab .wrap_video iframe {
+      height: 300px;
+    }
+  
+    /* ================= TESTIMONI ================= */
+  
+    .wrap_mengapa_kami_testimoni {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .card-testimoni {
+      width: 100% !important;
+    }
+  
+    /* ================= CAREER ================= */
+  
+    .career_body {
+      padding: 20px;
+    }
+  
+    /* ================= FLOATING WA ================= */
+  
+    .floating-wa {
+      width: 45px;
+      height: 45px;
+      font-size: 22px;
+    }
+
+    .navbar-collapse {
+        background: #FACF07;
+        .nav-link.dropdown-toggle.show{
+            color: #1e1e1e;
+            font-weight: 600;
+        }
+        .dropdown-menu.show{
+            background: #e4bb04;
+            border-radius: 0;
+        }
+        li.nav-item{
+            line-height: 25px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            a{
+                color:#1e1e1e;
+            }
+        }
+    }
+
+    .wrap-gps-header{
+        .navbar-toggler{
+            border: 1px solid #fff;
+            padding: 7px 10px;
+            font-size: 20px;
+            border-radius: 8px;
+            i{
+                color: #fff;
+            }
+        }
+
+        .gps-lang.mobile-only {
+            padding: 0;
+            display: flex !important;
+            border: 1px solid #bbbbbd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 0;
+            margin-right: -10px;
+        }
+
+    }
+
+    .gps-hero{
+        .flex_center_content{
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+        }
+        .ml-1{
+            margin-left: 0 !important;
+        }
+    }
+
+
+    .consult-card .wrap_form_contacts .form-check label {
+        display: flex;
+        color: #555;
+        font-size: 14px;
+        line-height: normal;
+    }
+    .site-footer{
+        padding: 30px 20px 30px;
+        .footer-logo{
+            max-width: 130px;
+            margin-bottom: 16px;
+        }
+        .footer-about{
+            p br{
+              display: none;  
+            }
+        }
+    }
+
+    .footer-links a{
+        color: #555;
+    }
+
+    .news-filter-top{
+        .news-search-form{
+            margin-bottom: 16px;
+        }
+    }
+    .wrap_list_news .news-card .news-content .news-title{
+        font-size: 16px;
+        line-height: normal;
+        a{
+            font-size: 16px;
+        }
+    }
+    .news-list-section{
+        .col-12.col-md-4.mb-5 {
+            margin-bottom: 25px !important;
+        }
+    }
+    .wrap-single-news-section{
+        .news-featured-image{
+            img{
+                height: auto !important;
+            }
+        }
+    }
+    .wrap-single-news-section .news-title-main{
+        font-size: 22px;
+    }
+    .recommended-articles {
+        margin-top: 40px;
+    }
+    .wrap_list_news.recommended-articles{
+        .row{
+            .col-12.col-md-4{
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+
+    .archive.tax-brand-products, .our-products-template-default.single.single-our-products, .single.single-post, .single-sertifikasi, .tax-industry.term-pertambangan, .tax-industry, .tax-tags-gps{
+        header.wrap-gps-header{
+          .navbar-toggler{
+                border: 1px solid #BBBBBD;
+                padding: 7px 10px;
+                font-size: 20px;
+                border-radius: 8px;
+                i{
+                    color: #1e1e1e;
+                }
+            }
+        }
+    }
+    .wrap-gps-header.sticky-active{
+        .navbar-toggler{
+            border: 1px solid #BBBBBD;
+            padding: 7px 10px;
+            font-size: 20px;
+            border-radius: 8px;
+            i{
+                color: #1e1e1e;
+            }
+        }
+    }
+    
+    .product-link{
+        position: relative;
+        bottom: unset;
+        font-size: 14px;
+        i{
+            line-height: 22px;
+            margin-left: 3px;
+            font-size: 12px;
+        }
+    }
+    .product-card{
+        margin-bottom: 20px;
+    }
+    .product-hero {
+        height: 200px;
+        background-repeat: no-repeat;
+    }
+    .product-hero{
+        padding: 80px 0;
+    }
+    .wrap_brand_products .brand-title{
+        font-size: 24px;
+    }
+
+    .product-filter{
+        display: block !important;
+        .filter-type{
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    }
+    .wrap_brand_products .filter-industry{
+        width: 100%;
+    }
+    .wrap_brand_products .filter-industry{
+        justify-content: center;
+    }
+
+    .product-gallery{
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .wrap_detail_products .product-info .product-title{
+        font-size: 25px;
+    }
+    .product-detail-section .product-key-list li{
+        font-size: 14px;
+    }
+    .product-detail-section .spec-label{
+        font-size: 14px;
+    }
+    .product-detail-section .spec-value{
+        font-size: 14px; 
+    }
+    .daftar-solusi .swiper-wrapper .swiper-slide img{
+        height: 220px;
+        object-fit: cover;
+    }
+    .pertambangan-swiper{
+        margin-bottom: 16px;
+    }
+    .daftar-solusi {
+        padding-top: 30px;
+    }
+    .daftar-solusi .space_d_solusi{
+        padding-left: 10px;
+    }
+    .product-list-section .brand-section .brand-header{
+        display: block;
+    }
+    .product-list-section .brand-section .brand-header a.brand-link {
+        position: relative;
+        right: unset;
+        text-decoration: none;
+        top: unset;
+        font-size: 16px;
+        color: #2f75bb;
+    }
+    .wrap_solusi .bg_abstract{
+        padding-bottom: 20px;
+        padding-top: 40px;
+        height: auto;
+    }
+    .wrap_solusi.move_space {
+        margin-top: 20px;
+    }
+
+    .product-list-section .brand-section{
+        margin-top: 20px;
+    }
+    .wrap_solusi .bg_abstract{
+        background-size: cover;
+    }
+    
+    .cors_content.product-content.py-5.pb-0{
+        padding: 0; 
+    }
+    .cors_content.product-content.py-5.pb-0 {
+        // padding-top: 0 !important;
+    }
+    .cors_content{
+        .wp-block-heading{
+            margin-bottom: 0 !important;
+            br{
+                display: none;
+            }
+        }
+    }
+    .wp-block-spacer {
+        display: none;
+    }
+    .corsimg{
+        padding-right: 0;
+    }
+    .cors_content .corslist li {
+        position: relative;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .cors_industry {
+        padding: 40px 0;
+        background: #f5f5f5;
+    }
+    .product-list-section{
+        padding-bottom: 30px;
+    }
+    .wrap_unggulan.product-content.py-5{
+        padding: 0;
+    }
+    .wrap_unggulan .wp-block-group h2.wp-block-heading{
+        margin-bottom: 0;
+    }
+    .wrap_unggulan .card_bg_produk_unggulan .wp-block-cover__inner-container{
+        padding-top: 16px;
+    }
+    .wrap_unggulan p.text-custom{
+        font-size: 16px !important;
+    }
+
+    .wrap_unggulan .card_bg_produk_unggulan:last-child {
+        margin-bottom: 36px;
+    }
+    .wrap_btn_produk_unggulan{
+        a{
+            color: #e4bb04 !important;
+        }
+    }
+    .wrap_pelatihan{
+        padding-top: 40px;
+        .wp-block-heading{
+            margin-bottom: 0;
+        }
+    }
+    .wrap_pelatihan .grid_img_pelatihan .wp-block-image img{
+        border-radius: 16px;
+    }
+    .left_space{
+        padding-left: 0 !important  ; 
+    }
+    .wrap_lab {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .wrap_lab_section_2::before{
+        height: 100%;
+    }
+
+    .product-list-section{
+        .product-content{
+            padding: 10px;
+        }
+    }
+    .product-list-section .product-content .product-title{
+        font-size: 16px;
+    }
+    .product-list-section .product-content .product-meta .brand_product{
+        font-size: 12px;
+    }
+    .product-list-section .product-content .product-meta .cat_products{
+        font-size: 12px;
+    }
+    .wrap_tentang_karir {
+        padding-top: 30px;
+    }
+    .wrap_career .accordion.career_accordion .accordion-item.career_item h2.accordion-header .accordion-button .career_header_content .career_title h3{
+        font-size: 16px;
+    }
+    .wrap_career .career_excerpt{
+        font-size: 14px !important; 
+    }
+    .wrap_career .career_body ul.wp-block-list li{
+        font-size: 14px !important;   
+    }
+
+    .recommended-products{
+        .product-content{
+            padding: 10px;
+        }
+    }
+
+    .wrap_profil_perusahaan{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .wrap_history .history_content{
+        width: 100%;
+        padding: 5px 20px;
+        margin-top: 16px;
+    }
+    .wrap_history .history_image {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }  
+    .wrap_history .history_card{
+        height: 100%;
+    }
+
+    .wrap_history .history-swiper {
+        padding-bottom: 40px;
+    }
+
+    .wrap_lab_section_3{
+        .title_tab_lab{
+            display: none;
+        }
+        .mobile_only_title_tab{
+            display: block !important;
+            font-size: 12px;
+            text-transform: none;
+            font-weight: 500;
+            margin: 0px 5px;
+        }
+    }
+    .wrap_lab_section_3 .wrap_accordion_kalibrasi .wp-block-accordion-item .wp-block-accordion-panel .wp-block-columns{
+        display: block ruby;
+    }
+    .wrap_lab_section_3 .wrap_accordion_kalibrasi .wp-block-accordion-item .wp-block-accordion-panel .wp-block-column .wp-block-group .wp-block-group__inner-container{
+        font-size: 12px;
+    }
+    .wrap_lab_section_3 .wrap_accordion_kalibrasi .wp-block-accordion-item .wp-block-accordion-panel .wp-block-column .wp-block-group .wp-block-group__inner-container i.fas{
+        font-size: 12px;
+    }
+    .wrap_lab_section_3 .w-50-m{
+        width: 50%;
+    }
+
+    .wrap_lab_section_3 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .wrap_lab_section_4 {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .wrap_lab_section_3 .wp-block-columns.mb-2.mt-5.is-layout-flex.wp-block-columns-is-layout-flex {
+        display: none;
+    }
+    .wrap_lab_section_3 #service_calibration{
+        margin-top: 26px;
+    }
+    .wp-block-image.size-full.img_layanan {
+        padding-left: 0;
+    }
+    .d-none-m{
+        display: none !important;
+    }
+    .wrap_lab_section_4 .logo_layanan .wp-block-column{
+        flex-basis: 30% !important;
+    }
+    .wrap_lab_section_4 .logo_layanan{
+        margin-bottom: 0;
+    }
+    .wrap_mengapa_kami_keunggulan{
+        padding-top: 30px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: cover;
+        height: 100%;
+    }
+    .wrap_mengapa_kami_keunggulan .right_side h5.wp-block-heading.icon_title{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .product-faq{
+        .accordion{
+            --bs-accordion-btn-icon-width: 0.8rem;
+            --bs-accordion-btn-padding-x: 0.8rem;
+            --bs-accordion-btn-padding-y: 0.8rem;
+        }
+    }
+
+    .wrap-gps-header{
+        .navbar .dropdown-toggle{
+            width: 100%;
+            position: relative;
+        }
+        .dropdown-toggle::after{
+            right: 16px;
+            position: absolute;
+        }
+    }
+
+    .wrap_slide_products{
+        .product-swiper .swiper-slide{
+            width: auto;
+        }
+    }
+
+
+    .wrap-services-gps-section-gen{
+        .btn_cat_services{
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .service-content{
+            .wp-block-list{
+                li{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .wrap-services-gps-section .service-image.left_side{
+        padding-right: 0;
+    }
+    .wrap-services-gps-section {
+        padding: 30px 0;
+    }
+    .wrap-services-gps-section .service-image img{
+        height: auto;
+        margin-bottom: 16px;
+    }
+    .wrap-services-gps-section .client-section {
+        margin-top: 30px;
+    }
+    .wrap-services-gps-section.right_side_background{
+        margin-top: 5px;
+    }
+    .wrap-services-gps-section{
+        &.right_side_background::before{
+            height: 100%;
+        }
+        .service-image.right_side{
+            padding-left: 0;
+            img{
+                border-radius: 16px;
+            }
+        }
+    }
+    .wrap-services-gps-section .trusted-swiper-client .swiper-slide{
+        width: 160px;
+    }
+
+    .insight-card {
+        height: auto;
+    }
+    .wrap_list_news .news-card{
+        height: auto;
+    }
+
+
+
+
+
+
+  
+  }
+
+
+  @media (max-width: 576px) {
+
+    
+  
+  }

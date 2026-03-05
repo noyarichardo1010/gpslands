@@ -1,0 +1,9 @@
+<?php
+get_header();
+get_template_part('template/pelatihan/index');
+get_template_part('template/pelatihan/section-1');
+get_template_part('template/pelatihan/section-2');
+get_template_part('template/pelatihan/pertanyaan-umum');
+get_template_part('template/pelatihan/article');
+get_footer();
+?>
